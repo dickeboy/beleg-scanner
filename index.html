@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beleg Scanner Moldau</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>📄 Moldau Beleg Scanner</h1>
+  
+  <input type="file" accept="image/*" id="imageInput" capture="environment">
+  <button onclick="scanBeleg()">Beleg scannen</button>
+
+  <div id="output"></div>
+  <button onclick="downloadExcel()">Excel herunterladen</button>
+
+  <script src="tesseract.min.js"></script>
+  <script src="xlsx.full.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
